@@ -1,0 +1,34 @@
+{
+  "name": "gympass-api-fastify",
+  "version": "1.0.0",
+  "description": "Rocketseat Formação Node.js: API Node.js com SOLID",
+  "author": {
+    "name": "Felipe DR",
+    "email": "felipe.corp7@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felipe-dr/gympass-api-fastify"
+  },
+  "bugs": {
+    "url": "https://github.com/felipe-dr/gympass-api-fastify/issues",
+    "email": "felipe.corp7@gmail.com"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "devDependencies": {
+    "@types/node": "18.14.1",
+    "tsup": "6.6.3",
+    "tsx": "3.12.3",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "fastify": "4.13.0"
+  }
+}
