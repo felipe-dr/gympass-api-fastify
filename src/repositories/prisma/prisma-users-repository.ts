@@ -1,4 +1,4 @@
-import { Prisma } from '@prisma/client'
+import { Prisma, User } from '@prisma/client'
 
 import { prisma } from '@/lib/prisma'
 
@@ -9,6 +9,10 @@ export class PrismaUsersRepository implements UsersRepository {
     const user = await prisma.user.create({ data })
 
     return user
+  }
+
+  findById(id: string): Promise<User | null> {
+    throw new Error('Method not implemented.')
   }
 
   async findByEmail(email: string) {
