@@ -107,6 +107,18 @@ Instalar as dependências do projeto.
 pnpm install
 ```
 
+Criar arquivo `.env` na raiz do projeto.
+
+```text
+NODE_ENV=dev
+
+# Auth
+JWT_SECRET=gympass
+
+# Database
+DATABASE_URL="postgresql://docker:docker@localhost:5432/gympass?schema=public"
+```
+
 ### Testes
 
 #### Unitário
@@ -134,18 +146,6 @@ pnpm test:ui
 ```
 
 ### Localmente
-
-Criar arquivo `.env` na raiz do projeto.
-
-```text
-NODE_ENV=dev
-
-# Auth
-JWT_SECRET=gympass
-
-# Database
-DATABASE_URL="postgresql://docker:docker@localhost:5432/gympass?schema=public"
-```
 
 Criar imagem com o docker compose.
 
